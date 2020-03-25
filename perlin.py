@@ -1,5 +1,8 @@
 import numpy as np
 
+width = 5
+height = 5
+
 cells = [[0, 0, 4, 0, 3],
          [0, 2, 0, 8, 0],
          [0, 2, 0, 0, 0],
@@ -17,6 +20,7 @@ for i in range(len(cells)):
     for j in range(len(cells[i])):
         #   Access the numbers within the lists
         x = cells[i][j]
+        y = cells[j][i]
         #   Now through the length of the new list, c.
         for k in range(len(c)):
             #   If c[k] is less than x (current number), we make c[k] equal to x - 1
